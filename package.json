@@ -1,0 +1,46 @@
+{
+  "name": "dsh-meoo",
+  "version": "1.0.0",
+  "description": "把秒悟 Meoo 的模型接进 DeepSeek Harness：自动登录取项目服务 AK、同步模型目录，模型直接出现在会话选择器与 设置 → 模型 里",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "meoo",
+    "llm-provider",
+    "openai-compatible"
+  ],
+  "homepage": "https://github.com/sangonomiya249/dsh-meoo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangonomiya249/dsh-meoo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sangonomiya249/dsh-meoo/issues"
+  },
+  "author": "sangonomiya249",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/offline.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
