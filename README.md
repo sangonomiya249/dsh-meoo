@@ -47,7 +47,7 @@ dsh-meoo (Host)
 | 存密钥 | `credentials.set('MEOO_API_KEY', ak)` | 不需要 |
 
 也就是说：装好 → `/meoo login` → 点授权 → 剩下的（AK、模型清单、路由）全自动。
-如果之前用过 [meoo-proxy](https://github.com/sangonomiya249/meoo-proxy) 登录，会直接复用
+如果之前用过 `meoo-proxy` CLI 登录，会直接复用
 `~/.meoo-proxy/config.json` 里的登录态与 AK，**连那一次点击都省了**。
 
 想完全不走浏览器也可以：`/meoo key meoo_project_service_v1.xxx` 手填 AK，
